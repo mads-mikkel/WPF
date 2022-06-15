@@ -1,0 +1,28 @@
+﻿<Window x:Class="CountUpAndDown.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CountUpAndDown"
+        mc:Ignorable="d"
+        Title="MainWindow"
+        Height="450"
+        Width="800">
+    <Grid>
+        <Button Name="buttonCountUp"
+                Content=""
+                FontSize="48"
+                HorizontalAlignment="Left"
+                Margin="49,49,0,0"
+                VerticalAlignment="Top"
+                Click="ButtonCountUp_Click" />
+        <Button Name="buttonCountDown"
+                FontSize="48"
+                Content="↓"
+                HorizontalAlignment="Left"
+                Margin="49,149,0,0"
+                VerticalAlignment="Top"
+                Click="ButtonCountDown_Click" />
+
+    </Grid>
+</Window>

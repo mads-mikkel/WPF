@@ -1,0 +1,52 @@
+﻿<Window x:Class="ItemsControls.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ItemsControls"
+        mc:Ignorable="d"
+        Title="MainWindow"
+        Height="450"
+        Width="800">
+    <Grid>
+        <Label Content="Personer:"
+               Margin="40,10"
+               Width="100"
+               Height="25"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top" />
+        <ListBox x:Name="listBoxPeople"
+                 Margin="40"
+                 Width="250"
+                 HorizontalAlignment="Left"
+                 DisplayMemberPath="Name"
+                 SelectionChanged="listBoxPeople_SelectionChanged" />
+        <Button Content="Tilføj"
+                HorizontalAlignment="Left"
+                Margin="327,114,0,0"
+                VerticalAlignment="Top"
+                Height="27"
+                Width="62"
+                Click="AddPerson_Click" />
+        <TextBox Name="textBoxName"
+                 HorizontalAlignment="Left"
+                 Margin="329,40,0,0"
+                 Text="TextBox"
+                 TextWrapping="Wrap"
+                 VerticalAlignment="Top"
+                 Width="120" />
+        <DatePicker Name="datePickerBirthDate"
+                    HorizontalAlignment="Left"
+                    Margin="329,70,0,0"                    
+                    VerticalAlignment="Top"
+                    Width="120" 
+                    DisplayDateEnd="2022-06-04">
+            <DatePicker.Resources>
+                <Style TargetType="DatePickerTextBox">
+                    <Setter Property="Text"
+                            Value="Vælg en dato" />
+                </Style>
+            </DatePicker.Resources>
+        </DatePicker>
+    </Grid>
+</Window>

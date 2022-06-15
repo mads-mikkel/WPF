@@ -1,0 +1,56 @@
+﻿<Window x:Class="CatchMeIfUCan.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CatchMeIfUCan"
+        mc:Ignorable="d"
+        Title="Catch Me If U Can! ☺"
+        WindowState="Maximized"
+        d:Height="100"
+        d:Width="200">
+    <Grid>
+        <Button x:Name="button"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Left"
+                Content="☺"
+                Foreground="Coral"
+                FontWeight="Bold"
+                FontSize="20"
+                Height="35"
+                Width="35"
+                Padding="0"
+                Background="Bisque"
+                BorderBrush="BurlyWood"
+                Click="Button_Click" />
+        <TextBlock x:Name="textBlockTime"
+                   HorizontalAlignment="Left"
+                   Margin="84,10,0,0"
+                   TextWrapping="Wrap"
+                   VerticalAlignment="Top"
+                   Width="95"
+                   Background="Black"
+                   Foreground="WhiteSmoke"
+                   FontSize="20" />
+        <TextBlock HorizontalAlignment="Left"
+                   Margin="51,10,0,0"
+                   TextWrapping="Wrap"
+                   VerticalAlignment="Top"
+                   Text="Time:" />
+        <TextBlock x:Name="textBlockHigh"
+                   HorizontalAlignment="Left"
+                   Margin="84,42,0,0"
+                   TextWrapping="Wrap"
+                   VerticalAlignment="Top"
+                   Width="95"
+                   Background="Black"
+                   Foreground="WhiteSmoke"
+                   FontSize="20" />
+        <TextBlock HorizontalAlignment="Left"
+                   Margin="51,46,0,0"
+                   TextWrapping="Wrap"
+                   VerticalAlignment="Top"
+                   Text="High:" />
+
+    </Grid>
+</Window>
